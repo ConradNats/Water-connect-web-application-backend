@@ -1,13 +1,22 @@
 {
-  "name": "backend",
+  "name": "water-connect-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "The backend for connecting watermen to rural households to enable availability of clean and safe water",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "water",
+    "connect",
+    "backend",
+    "api",
+    "watermen",
+    "households"
+  ],
+  "author": "ConradNats",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
@@ -18,5 +27,8 @@
     "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.22.5",
     "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
   }
 }

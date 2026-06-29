@@ -1,0 +1,51 @@
+// Application Constants
+
+const HTTP_STATUS = {
+  OK: 200,
+  CREATED: 201,
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  FORBIDDEN: 403,
+  NOT_FOUND: 404,
+  CONFLICT: 409,
+  INTERNAL_SERVER_ERROR: 500,
+  SERVICE_UNAVAILABLE: 503,
+};
+
+const ERROR_CODES = {
+  INVALID_INPUT: 'INVALID_INPUT',
+  UNAUTHORIZED: 'UNAUTHORIZED',
+  FORBIDDEN: 'FORBIDDEN',
+  NOT_FOUND: 'NOT_FOUND',
+  CONFLICT: 'CONFLICT',
+  INTERNAL_ERROR: 'INTERNAL_ERROR',
+  DATABASE_ERROR: 'DATABASE_ERROR',
+};
+
+const USER_ROLES = {
+  ADMIN: 'admin',
+  WATERMAN: 'waterman',
+  HOUSEHOLD: 'household',
+};
+
+const ORDER_STATUS = {
+  PENDING: 'pending',
+  CONFIRMED: 'confirmed',
+  IN_PROGRESS: 'in_progress',
+  COMPLETED: 'completed',
+  CANCELLED: 'cancelled',
+};
+
+const SERVICE_STATUS = {
+  ACTIVE: 'active',
+  INACTIVE: 'inactive',
+  SUSPENDED: 'suspended',
+};
+
+module.exports = {
+  HTTP_STATUS,
+  ERROR_CODES,
+  USER_ROLES,
+  ORDER_STATUS,
+  SERVICE_STATUS,
+};
